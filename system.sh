@@ -107,7 +107,7 @@ build-essential libtool autotools-dev automake pkg-config libevent-dev bsdmainut
 
 
 echo Downloading selected YiiMP Repo...
-hide_output sudo git clone ${YiiMPRepo} $STORAGE_ROOT/yiimp/yiimp_setup/yiimp
+hide_output sudo git clone https://github.com/traketal/yiimp.git $STORAGE_ROOT/yiimp/yiimp_setup/yiimp
 if [[ ("$CoinPort" == "y" || "$CoinPort" == "Y" || "$CoinPort" == "yes" || "$CoinPort" == "Yes" || "$CoinPort" == "YES") ]]; then
 	cd $STORAGE_ROOT/yiimp/yiimp_setup/yiimp
 	sudo git fetch
